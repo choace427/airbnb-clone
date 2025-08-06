@@ -1,14 +1,4 @@
-"use client";
-
-import { useState } from "react";
-import Header from "@/components/layout/header";
-import SearchBar from "@/components/search/search-bar";
-import PropertyGrid from "@/components/property/property-grid";
-import InspirationSection from "@/components/inspiration/inspiration-section";
-import Footer from "@/components/layout/footer";
-import BottomNavigation from "@/components/layout/bottom-navigation";
-
-const destinations = [
+export const destinations = [
   { name: "Nearby", description: "Find what's around you", icon: "✈️" },
   {
     name: "Pocono Mountains, PA",
@@ -45,7 +35,7 @@ const destinations = [
   { name: "London, UK", description: "For historic charm", icon: "🏰" },
 ];
 
-const properties = [
+export const properties = [
   {
     id: 1,
     title: "Home in San Juan",
@@ -194,7 +184,7 @@ const properties = [
   },
 ];
 
-const inspirationCategories = [
+export const inspirationCategories = [
   "Popular",
   "Arts & culture",
   "Beach",
@@ -206,7 +196,7 @@ const inspirationCategories = [
   "Airbnb-friendly apartments",
 ];
 
-const inspirationDestinations = [
+export const inspirationDestinations = [
   { name: "Amsterdam", type: "Cottage rentals", distance: "4,234 miles away" },
   { name: "Memphis", type: "Condo rentals", distance: "1,045 miles away" },
   { name: "Charlotte", type: "Cabin rentals", distance: "567 miles away" },
@@ -242,23 +232,3 @@ const inspirationDestinations = [
   { name: "London", type: "City apartments", distance: "3,456 miles away" },
   { name: "Dubai", type: "Luxury stays", distance: "7,234 miles away" },
 ];
-
-export default function HomePage() {
-  const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
-
-  return (
-    <div className="min-h-screen bg-white pb-16 md:pb-0 overflow-x-hidden">
-      <Header onMobileSearchOpen={() => setMobileSearchOpen(true)} />
-      <SearchBar
-        mobileSearchOpen={mobileSearchOpen}
-        setMobileSearchOpen={setMobileSearchOpen}
-      />
-      <PropertyGrid />
-      <InspirationSection />
-      <div className="hidden md:block">
-        <Footer />
-      </div>
-      <BottomNavigation />
-    </div>
-  );
-}
