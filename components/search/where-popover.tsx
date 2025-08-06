@@ -40,7 +40,7 @@ export default function WherePopover({
           </div>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-96 p-0 mt-2" align="start">
+      <PopoverContent className="w-96 p-0 mt-2 bg-white" align="start">
         <div className="p-6">
           <div className="mb-6">
             <Input

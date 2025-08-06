@@ -132,7 +132,7 @@ export default function Header({ onMobileSearchOpen }: HeaderProps) {
                     <Globe className="h-4 w-4" />
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-80 p-0" align="end">
+                <PopoverContent className="w-100 p-0 bg-white" align="end">
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="font-semibold">Language and region</h3>
@@ -191,7 +191,7 @@ export default function Header({ onMobileSearchOpen }: HeaderProps) {
                     </div>
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-56 p-0" align="end">
+                <PopoverContent className="w-56 p-0 bg-white" align="end">
                   <div className="py-2">
                     <Button
                       variant="ghost"
@@ -211,9 +211,6 @@ export default function Header({ onMobileSearchOpen }: HeaderProps) {
                         </div>
                         <div>
                           <div className="font-medium">Become a host</div>
-                          <div className="text-xs text-gray-500">
-                            It's easy to start hosting and earn extra income.
-                          </div>
                         </div>
                       </div>
                     </Button>
