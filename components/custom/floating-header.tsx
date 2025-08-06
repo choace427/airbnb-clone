@@ -85,11 +85,7 @@ export function FloatingHeader() {
             </nav>
 
             <div className="flex items-center space-x-3">
-              <SmartButton
-                gradient
-                glow
-                className="text-gray-700 hover:text-[#FF5A5F] font-medium"
-              >
+              <SmartButton gradient glow className="font-medium">
                 Become a Host
               </SmartButton>
               <SmartButton gradient glow className="rounded-full px-6">
